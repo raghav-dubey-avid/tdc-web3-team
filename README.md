@@ -1,7 +1,56 @@
 
-# Sample Hardhat Project
+# Decentralized Voting Application
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Overview
+This project showcases a decentralized voting application leveraging the Ethereum blockchain. It integrates a Solidity smart contract for the voting mechanism with a ReactJS frontend for user interaction.
+
+## Features
+- Ethereum blockchain integration for secure and transparent voting.
+- Smart contract implementation in Solidity.
+- ReactJS frontend for a responsive and interactive user interface.
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js and npm (Node Package Manager)
+- Hardhat for Ethereum development
+
+### Getting Started
+1. **Clone the Repository:**
+git clone https://github.com/raghav-dubey-avid/tdc-web3-team
+
+2. **Install Dependencies:**
+Navigate to the project directory and install the necessary packages:
+npm install
+
+3. **Compile and Deploy the Contract:**
+Compile the Solidity contract and deploy it to the specified blockchain network:
+npx hardhat compile
+npx hardhat run --network volta scripts/deploy.js
+
+Replace `volta` with your preferred network.
+
+4. **Environment Setup:**
+After deploying the contract, copy the contract address to the `.env` file in your project root. Update the blockchain endpoint in the `hardhat-config.js` if using a different network.
+
+5. **Start the Application:**
+Launch the React application:
+npm start
+
+The app will be available at http://localhost:3000.
+
+## Usage
+Once the application is running, users can interact with the smart contract through the React interface to participate in the voting process.
+
+## Contributing
+Contributions to the project are welcome. Please ensure to follow the standard coding practices and create a pull request for any changes.
+
+## License
+[MIT License](LICENSE)
+
+## Acknowledgments
+This project is inspired by the evolving needs of decentralized applications in the blockchain space.
+
 
 Try running some of the following tasks:
 
@@ -86,5 +135,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
 # tdc-web3-team
->>>>>>> 60b92ff11bbe45a6981198360dd82c5418ba4aa2
->>>>>>> d8cc4b565c1e3daccc625559e8dbed848741d0c4
+
